@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index2.css">
+  <link rel="stylesheet" href="../css/global2.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <div class="container">
+    <div class="top-nav">
+
+      <a href="" class="nav-logo">
+        GOPLAY
+      </a>
+  
+      
+      <div class="user-box">
+        <img src="../images/user.jpg" alt="" class="user-img">
+        <div class="user-welcome">
+          <p>Hey, Jeff</p>
+          <p>Sunday, June 25, 2024</p>
+        </div>
+      </div>
+  
+      <div class="search-box">
+        <img src="../images/search.png" alt="">
+        <input type="text" class="search-bar" placeholder="Search for users, sports or locations">
+      </div>
+  
+  
+      <div class="top-nav-btns">
+        <a href="#account" class="top-nav-btn">
+          <img src="../images/account.png" alt="">
+        </a>
+    
+    
+        <a href="./Login.html" class="top-nav-btn">
+          <img src="../images/logout.png" alt="">
+        </a>
+      </div>
+  
+     
+      
+  
+  
+    </div>
+
+    <div class="nav-btns">
+      <div class="nav-btn active" id="#dashboard">
+        <img class="dash-icon active" id="#dashboard" src="../images/dashboard.png" alt="">
+        <a class="nav-link" href="#dashboard">Dashboard</a>
+      </div>
+      
+      <div class="nav-btn" id="#search">
+        <img class="dash-icon"  id="#search" src="../images/search.png" alt="">
+        <a class="nav-link"  href="#search">Search</a>
+      </div>
+  
+      <div class="nav-btn"  id="#messages">
+        <img class="dash-icon"  id="#messages" src="../images/chat.png" alt="">
+        <a class="nav-link"  href="#messages">Messages</a>
+      </div>
+  
+      <div class="nav-btn"  id="#account">
+        <img class="dash-icon"  id="#account" src="../images/account.png" alt="">
+        <a class="nav-link"  href="#account">Account</a>
+      </div>
+      
+      <div class="nav-btn logout" >
+        <img class="dash-icon" src="../images/logout.png" alt="">
+        <a class="nav-link"  href="../index.html">Logout</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class=""></div>
+      <div class="inner">
+        <div class="account-alert">
+          <div class="left">
+            <img src="../images/bell.png" alt="">
+            <div class="account-message">
+              <p>Dear Jeff</p>
+              <p>Finish setting up your account.</p>
+            </div>
+          </div>
+    
+          <a href="#account">
+            Finish set up
+          </a>
+        </div>
+    
+        <div class="dash-top">
+    
+          <div class="card">
+            <p class="card-title">Active Users</p>
+            <div class="card-detail">
+              <img src="../images/account.png" alt="">
+              <p>125</p>
+            </div>
+          </div>
+    
+          <div class="card">
+            <p class="card-title">Number of sports</p>
+            <div class="card-detail">
+              <img src="../images/running.png" alt="">
+              <p>3</p>
+            </div>
+          </div>
+    
+          <div class="card">
+            <p class="card-title">New messages</p>
+            <div class="card-detail">
+              <img src="../images/chat.png" alt="">
+              <p>3</p>
+            </div>
+          </div>
+    
+          <div class="card">
+            <p class="card-title">Current Location</p>
+            <div class="card-detail">
+              <img src="../images/location.png" alt="">
+              <p>Austin, Texas</p>
+            </div>
+          </div>
+          
+        </div>
+    
+        <div class="dash-bottom">
+    
+    
+          <div class="left">
+            <p class="title">People you might like</p>
+            <div class="user-list" id="user-list">
+    
+            </div>
+            
+            
+          </div>
+    
+          <div class="right">
+    
+            <div class="top">
+              <iframe
+                class="map-box"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC34EHvYqI7XXT6JHl4AhpgyA6q0stNmHQ
+                  &q=parmer+,LaneAustin+TX">
+              </iframe>
+            </div>
+    
+            <div class="bottom">
+              <p></p>
+            </div>
+    
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../JS/fetchUsers.js"></script>
+</body>
+</html>
