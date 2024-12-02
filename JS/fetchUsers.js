@@ -1,5 +1,5 @@
 
-fetch('https://jfdiaku.github.io/SBA-307-308/JS/users.json')
+fetch('/SBA-307-308/JS/users.json')
     .then(response => {
         if (!response.ok) {
             console.log("no response");
