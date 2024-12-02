@@ -1,5 +1,5 @@
 
-fetch('./js/users.json')
+fetch('./SBA-307-308/js/users.json')
     .then(response => {
         if (!response.ok) {
             console.log("no response");
