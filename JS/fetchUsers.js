@@ -1,5 +1,5 @@
 
-fetch('/users.json')
+fetch('./js/users.json')
     .then(response => {
         if (!response.ok) {
             console.log("no response");
