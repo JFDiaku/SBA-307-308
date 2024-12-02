@@ -18,3 +18,18 @@ users.forEach(user => {
   userList.innerHTML += userCard; 
 });
 
+activeUsers.forEach(user => {
+  const activeuser = document.getElementById('active-players');
+
+
+  const userCard = `
+    <div class="player">
+      <img src="${user.image}" alt="">
+      <div class="name">
+        ${user.firstname}
+      </div>
+    </div>
+  `;
+  activeuser.innerHTML += userCard; 
+});
+
