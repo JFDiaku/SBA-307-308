@@ -207,32 +207,31 @@
 
 .active-players{
   display: flex;
-  width: 100%;
-  margin: auto;
-  justify-content: center;
-  gap: 2rem;
+  justify-content: space-evenly;
 }
 
 .active-players .player{
   position: relative;
-  width: 15%;
-  border-radius: 20px;
-
+  width: auto;
+  height: 70%;
 }
 
 .active-players .player img{
-  border-radius: inherit;
+  border-radius: 20px;
+  width: auto;
+  height: 100%;
   border: 5px solid var(--accent2);
 }
 
 .active-players .player .name{
   position: absolute;
-  right: 0;
   left: 0;
+  right: 0;
   margin: auto;
-  bottom: 1rem;
+  bottom: -20%;
   background-color: var(--accent2);
-  width: max-content;
+  width: min-content;
+  height: min-content;
   font-size: 15px;
   padding: 3px 10px;
   color: black;
