@@ -20,7 +20,7 @@ document.getElementById('login-form').addEventListener('submit', (event) => {
   if (email === validCredentials.email && password === validCredentials.password) {
     message.innerHTML = '<div class="success">Login succesfull.</div>'
     setTimeout(() => {
-      window.location.href = '../pages/newdash.html'; // Replace with your desired page
+      window.location.href = './pages/newdash.html'; // Replace with your desired page
   }, 500);
   }else if(email === "" || password === ""){
      message.innerHTML = '<div class="error">Email or Password can not be empty.</div>'
