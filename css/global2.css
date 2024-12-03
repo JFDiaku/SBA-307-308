@@ -87,7 +87,17 @@ position: fixed;
 }
 
 
-.nav-btn.logout{
+.nav-btns p{
+  color: white;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+}
+
+
+.nav-btn p:nth-child(1){
   margin-top: 5rem;
 }
 
@@ -185,21 +195,82 @@ position: fixed;
   gap: 1rem;
 }
 
+
+
 .top-nav-btn{
-  height: 15px;
-  background-color: var(--accent2);
-  border-radius: 10px;
-  padding: 10px;
+  padding: 1rem 1.5rem;
   display: flex;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.toggle-dropdown{
+  display: flex;
+  position: relative;
+  gap: 1rem;
   align-items: center;
 }
 
+.drop-button{
+ font-size: 20px;
+ color: white;
+ font-weight: 800;
+ background-color: unset;
+ padding:4px 3px;
+ border-radius: 50%;
+ border: none;
+ outline: none;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ transition: all .5s ease-in-out;
+}
+
+.drop-button img{
+  background-color: white;
+  border-radius: 50%;
+}
+
+
+
+.dropdown-menu{
+  position: absolute;
+  background-color: var(--glass_back);
+  right: -1rem;
+  bottom: -7rem;
+  padding: 1rem;
+  height: min-content;
+  border-radius: 20px;
+  backdrop-filter: var(--glass_filter);
+  pointer-events: none;
+  transform: translateY(-1rem);
+  opacity: 0;
+  transition: all .3s ease-in-out;
+}
+
 .top-nav-btn:hover{
-  background-color: var(--accent);
+  background-color: var(--secondary);
 }
 
 .top-nav-btn img{
   height: 20px;
+  background-color: var(--accent2);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.dropdown-menu.show{
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  transform: translateY(1rem);
+}
+
+.drop-button.show{
+  rotate: 180deg;
 }
 
 

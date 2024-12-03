@@ -4,14 +4,14 @@ users.forEach(user => {
 
   const userCard = `
     <div class="user-card">
-      <img class="user-image" src="${user.image}" alt="${user.firstname}'s image">
+      <a href="" class="user-link"><img class="user-image" src="${user.image}" alt="${user.firstname}'s image"><a/>
       <div class="details">
         <h3>${user.firstname} ${user.lastname}</h3>
         <p>${user.sports.join(', ')}</p>
       </div>
       <div>
         <p class="location">${user.city}, ${user.state}</p>
-        <a href=""><img src="../images/chat.png" class="chat-btn" alt="${user.firstname}'s image"> </a>
+        <a href=""><img src="../images/chat.png" class="chat-btn" alt="chat-button"> </a>
       </div>
     </div>
   `;

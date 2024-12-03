@@ -58,6 +58,30 @@ const users = [
       longitude: -97.3308,
       latitude: 32.7555,
       image: "https://randomuser.me/api/portraits/men/78.jpg"
+    },
+    {
+      firstname: "Janeth",
+      lastname: "Griffin",
+      email: "emilydavis@example.com",
+      description: "Cycling and swimming are my passions. Always up for exploring new trails and pools. Let's get together for some fun and fitness!",
+      sports: ["Palates", "Yoga"],
+      city: "San Antonio",
+      state: "Texas",
+      longitude: -98.4936,
+      latitude: 29.4241,
+      image: "https://randomuser.me/api/portraits/women/32.jpg"
+    },
+    {
+      firstname: "James",
+      lastname: "Caruso",
+      email: "robertjohnson@example.com",
+      description: "Skilled in baseball and golf, I enjoy both team sports and individual challenges. Let’s connect for a game or practice session!",
+      sports: ["Basketball", "MMA"],
+      city: "Fort Worth",
+      state: "Texas",
+      longitude: -97.3308,
+      latitude: 32.7555,
+      image: "https://randomuser.me/api/portraits/men/25.jpg"
     }
   ];
   

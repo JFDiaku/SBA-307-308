@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/global2.css">
+  <title>Messages</title>
+</head>
+<body>
+  <div class="container">
+    <div class="top-nav">
+
+      <a href="" class="nav-logo">
+        GOPLAY
+      </a>
+  
+      
+      <div class="user-box">
+        <img src="../images/user.jpg" alt="" class="user-img">
+        <div class="user-welcome">
+          <p>Hey, Jeff</p>
+          <p>Sunday, June 25, 2024</p>
+        </div>
+      </div>
+  
+      <div class="search-box">
+        <img src="../images/search.png" alt="">
+        <input type="text" class="search-bar" placeholder="Search for users, sports or locations">
+      </div>
+  
+  
+      <div class="top-nav-btns">
+        
+        <div class="toggle-dropdown" >
+          <p>Jeff Francis Diaku</p>
+          <button class="drop-button" id="drop-button" onclick="toggleDropdown()">
+            <img src="../images/down.png" alt="">
+          </button>
+        </div>
+
+        <div class="dropdown-menu" id="dropdown">
+
+          <a href="#account" class="top-nav-btn">
+            Account
+            <img src="../images/account.png" alt="">
+          </a>
+      
+      
+          <a href="../index.html" class="top-nav-btn">
+            Logout
+            <img src="../images/logout.png" alt="">
+          </a>
+        </div>
+
+        
+      </div>
+  
+     
+      
+  
+  
+    </div>
+
+    <div class="nav-btns">
+      <p>Menu</p>
+      <div class="nav-btn" id="#dashboard">
+        <img class="dash-icon" id="#dashboard" src="../images/dashboard.png" alt="">
+        <a class="nav-link" href="./newdash.html">Dashboard</a>
+      </div>
+      
+      <div class="nav-btn active" id="#search">
+        <img class="dash-icon active"  id="#search" src="../images/search.png" alt="">
+        <a class="nav-link"  href="./search.html">Search</a>
+      </div>
+  
+      <div class="nav-btn"  id="#messages">
+        <img class="dash-icon"  id="#messages" src="../images/chat.png" alt="">
+        <a class="nav-link"  href="./messages.html">Messages</a>
+      </div>
+
+      <p>Settings</p>
+  
+      <div class="nav-btn "  id="#account">
+        <img class="dash-icon "  id="#account" src="../images/account.png" alt="">
+        <a class="nav-link"  href="./account.html">Account</a>
+      </div>
+      
+      <div class="nav-btn logout" >
+        <img class="dash-icon" src="../images/logout.png" alt="">
+        <a class="nav-link"  href="../index.html">Logout</a>
+      </div>
+    </div>
+  </div>
+  <script src="../JS/anim.js"></script>
+</body>
+</html>

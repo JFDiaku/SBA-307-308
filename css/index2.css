@@ -6,9 +6,9 @@
 
 .user-card{
   width: 85%;
-  height: 80px;
+  height: 75px;
   margin: auto;
-  padding: 20px 30px 10px 10px; 
+  padding: 10px 30px 10px 10px; 
   margin-bottom: 1rem;
   display: flex;
   border-radius: 20px;
@@ -25,18 +25,27 @@
   flex-direction: column;
   gap: 1rem;
   margin-right: 30px;
-
+  margin-top: 10px;
+  font-size: 13px;
 }
 
 .user-card .location{
   position: absolute;
   right: 30px;
   margin-bottom: 50px;
+  font-size: 13px;
+}
+
+.user-link{
+  height: 85%;
+  
+  border-radius: 50%;
 }
 
 .user-image{
+  height: 100%;
   border-radius: 50%;
-  height: 75px;
+  border: 8px var(--glass_back) solid;
 }
 
 .chat-btn{
@@ -213,14 +222,14 @@
 .active-players .player{
   position: relative;
   width: auto;
-  height: 70%;
+  height: 65%;
 }
 
 .active-players .player img{
-  border-radius: 20px;
+  border-radius: 50%;
   width: auto;
   height: 100%;
-  border: 5px solid var(--accent2);
+  border: 10px solid var(--glass_back);
 }
 
 .active-players .player .name{
@@ -228,7 +237,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  bottom: -20%;
+  bottom: -30%;
   background-color: var(--accent2);
   width: min-content;
   height: min-content;

@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/index2.css">
   <link rel="stylesheet" href="../css/global2.css">
+  <link rel="stylesheet" href="../css/index2.css">
+  
   <title>Dashboard</title>
 </head>
 <body>
@@ -31,14 +32,29 @@
   
   
       <div class="top-nav-btns">
-        <a href="#account" class="top-nav-btn">
-          <img src="../images/account.png" alt="">
-        </a>
-    
-    
-        <a href="../index.html" class="top-nav-btn">
-          <img src="../images/logout.png" alt="">
-        </a>
+        
+        <div class="toggle-dropdown" >
+          <p>Jeff Francis Diaku</p>
+          <button class="drop-button" id="drop-button" onclick="toggleDropdown()">
+            <img src="../images/down.png" alt="">
+          </button>
+        </div>
+
+        <div class="dropdown-menu" id="dropdown">
+
+          <a href="#account" class="top-nav-btn">
+            Account
+            <img src="../images/account.png" alt="">
+          </a>
+      
+      
+          <a href="../index.html" class="top-nav-btn">
+            Logout
+            <img src="../images/logout.png" alt="">
+          </a>
+        </div>
+
+        
       </div>
   
      
@@ -48,24 +64,30 @@
     </div>
 
     <div class="nav-btns">
+
+      <p>Menu</p>
+
       <div class="nav-btn active" id="#dashboard">
         <img class="dash-icon active" id="#dashboard" src="../images/dashboard.png" alt="">
-        <a class="nav-link" href="#dashboard">Dashboard</a>
+        <a class="nav-link" href="./newdash.html">Dashboard</a>
       </div>
       
       <div class="nav-btn" id="#search">
         <img class="dash-icon"  id="#search" src="../images/search.png" alt="">
-        <a class="nav-link"  href="#search">Search</a>
+        <a class="nav-link"  href="./search.html">Search</a>
       </div>
   
       <div class="nav-btn"  id="#messages">
         <img class="dash-icon"  id="#messages" src="../images/chat.png" alt="">
-        <a class="nav-link"  href="#messages">Messages</a>
+        <a class="nav-link"  href="./messages.html">Messages</a>
       </div>
+
+
+      <p>Settings</p>
   
       <div class="nav-btn"  id="#account">
         <img class="dash-icon"  id="#account" src="../images/account.png" alt="">
-        <a class="nav-link"  href="#account">Account</a>
+        <a class="nav-link"  href="./account.html">Account</a>
       </div>
       
       <div class="nav-btn logout" >
@@ -153,7 +175,7 @@
             </div>
     
             <div class="bottom">
-              <p>Active players near you</p>
+              <p>Active Chats</p>
               <div class="active-players" id="active-players">
                 
               </div>
@@ -166,7 +188,7 @@
     </div>
   </div>
 
-
+  <script src="../JS/anim.js"></script>
   <script src="../JS/users.js"></script>
   <script src="../JS/fetchUsers.js"></script>
   
