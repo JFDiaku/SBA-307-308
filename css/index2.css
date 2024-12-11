@@ -61,7 +61,7 @@
 
 .account-alert{
   display: flex;
-  background-color: var(--glass_back);
+  background-color: var(--black-glass);
   margin-bottom: 1rem;
   padding: 2rem 4rem 2rem 2rem;
   border-radius: 20px;
@@ -84,12 +84,12 @@
 
 .account-alert a{
   border: none;
-  background-color: var(--accent);
+  background-color: var(--glass_back);
   padding: 0 1rem;
   font-size: 15px;
   font-weight: 600;
   border-radius: 10px;
-  color: black;
+color: white;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -109,8 +109,7 @@
   display: flex;
   flex-direction: column;
   height: 100px;
-  background-color: var(--glass_back);
-  backdrop-filter: var(--glass_filter);
+  background-color: var(--black-glass);
   box-shadow: var(--glass_shadow);
   border-radius: 20px;
   color: white;
@@ -151,7 +150,8 @@
 
 .dash-bottom .left{
   height: 620px;
-  background-color: var(--glass_back);
+  background-color: var(--black-glass);
+
   border-radius: 20px;
   text-align: start;
   align-items: center;
@@ -198,7 +198,8 @@
 
 
 .dash-bottom .right .bottom{
-  background-color: var(--glass_back);
+  background-color: var(--black-glass);
+
   height: 40%;
   width: 100%;
   border-radius: 20px;

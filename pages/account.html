@@ -4,65 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/global2.css">
+  <link rel="stylesheet" href="../css/account.css">
   <title>Account</title>
 </head>
 <body>
-  <div class="container">
-    <div class="top-nav">
+  <div class="top-nav">
 
-      <a href="" class="nav-logo">
-        GOPLAY
-      </a>
-  
-      
-      <div class="user-box">
-        <img src="../images/user.jpg" alt="" class="user-img">
-        <div class="user-welcome">
-          <p>Hey, Jeff</p>
-          <p>Sunday, June 25, 2024</p>
-        </div>
-      </div>
-  
-      <div class="search-box">
-        <img src="../images/search.png" alt="">
-        <input type="text" class="search-bar" placeholder="Search for users, sports or locations">
-      </div>
-  
-  
-      <div class="top-nav-btns">
-        
-        <div class="toggle-dropdown" >
-          <p>Jeff Francis Diaku</p>
-          <button class="drop-button" id="drop-button" onclick="toggleDropdown()">
-            <img src="../images/down.png" alt="">
-          </button>
-        </div>
+    <a href="" class="nav-logo">
+      GOPLAY
+    </a>
 
-        <div class="dropdown-menu" id="dropdown">
-
-          <a href="./account.html" class="top-nav-btn">
-            Account
-            <img src="../images/account.png" alt="">
-          </a>
-      
-      
-          <a href="../index.html" class="top-nav-btn">
-            Logout
-            <img src="../images/logout.png" alt="">
-          </a>
-        </div>
-
-        
-      </div>
-  
-     
-      
-  
-  
+    
+    <div class="search-box" style="margin-right: 35%;">
+      <img src="../images/search.png" alt="">
+      <input type="text" class="search-bar" placeholder="Search for users, sports or locations">
     </div>
 
+
+    <div class="top-nav-btns">
+      
+      <div class="toggle-dropdown" >
+        <p>Jeff Francis Diaku</p>
+        <button class="drop-button" id="drop-button" onclick="toggleDropdown()">
+          <img src="../images/down.png" alt="">
+        </button>
+      </div>
+
+      <div class="dropdown-menu" id="dropdown">
+
+        <a href="./account.html" class="top-nav-btn">
+          Account
+          <img src="../images/account.png" alt="">
+        </a>
+    
+    
+        <a href="../index.html" class="top-nav-btn">
+          Logout
+          <img src="../images/logout.png" alt="">
+        </a>
+      </div>
+
+      
+    </div>
+
+   
+    
+
+
+  </div>
+  <div class="container">
+    
+
     <div class="nav-btns">
-      <p>Menu</p>
+      <p>MENU</p>
 
       <div class="nav-btn" id="#dashboard">
         <img class="dash-icon" id="#dashboard" src="../images/dashboard.png" alt="">
@@ -73,13 +67,18 @@
         <img class="dash-icon"  id="#search" src="../images/search.png" alt="">
         <a class="nav-link"  href="./search.html">Search</a>
       </div>
+
+      <div class="nav-btn"  id="#activities">
+        <img class="dash-icon"  id="#activities" src="../images/running.png" alt="">
+        <a class="nav-link"  href="./activities.html">Activities</a>
+      </div>
   
       <div class="nav-btn"  id="#messages">
         <img class="dash-icon"  id="#messages" src="../images/chat.png" alt="">
         <a class="nav-link"  href="./messages.html">Messages</a>
       </div>
 
-      <p>Settings</p>
+      <p>SETTINGS</p>
   
       <div class="nav-btn active"  id="#account">
         <img class="dash-icon active"  id="#account" src="../images/account.png" alt="">
@@ -91,7 +90,144 @@
         <a class="nav-link"  href="../index.html">Logout</a>
       </div>
     </div>
+
+    <div class="content">
+      <div class=""></div>
+      <div class="inner account">
+
+        <p class="edit-profile">Edit Profile</p>
+
+        <div class="edit-profile-box">
+
+          <div class="profile-picture">
+            <div class="profile-picture-box">
+              <img class="profile-pic" id="profile-pic" src="../images/account.png" alt="">
+              <img class="edit" src="../images/edit.png" alt="">
+            </div>
+          </div>
+  
+          <div class="form-box contact-form-box">
+
+            <div class="top">
+              <p class="form-title">Personal Info</p>
+
+              <div class="edit-info">
+                <img src="../images/edit.png" alt="">
+                Edit
+              </div>
+            </div>
+            
+  
+            <form action="" class="editable-form personal-form">
+              <div class="form-group">
+                <label for="fname">First-name</label>
+                <input id="fname" type="text" placeholder="" disabled>
+              </div>
+
+              <div class="form-group">
+                <label for="lname">Last-name</label>
+                <input id="lname" type="text" placeholder="" disabled>
+              </div>
+
+              <div class="form-group ">
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="" disabled>
+              </div>
+
+              <div class="form-group ">
+                <label for="">Phone</label>
+                <input id="phone" type="text" placeholder="" disabled>
+              </div>
+            </form>
+          </div>
+
+          <div class="form-box location-form-box">
+
+            <div class="top">
+              <p class="form-title">Location</p>
+
+              <div class="edit-info">
+                <img src="../images/edit.png" alt="">
+                Edit
+              </div>
+            </div>
+            
+  
+            <form action="" class="editable-form location-form ">
+              <div class="form-group">
+                <input type="text" id="location" placeholder="" disabled>
+              </div>
+
+            </form>
+          </div>
+
+          <div class="form-box Bio-form-box">
+
+            <div class="top">
+              <p class="form-title" >Bio</p>
+
+              <div class="edit-info">
+                <img src="../images/edit.png" alt="">
+                Edit
+              </div>
+            </div>
+            
+  
+            <form action="" class="editable-form Bio-form ">
+              <div class="form-group">
+                <textarea name="" id="bio" disabled rows="8"placeholder=""></textarea >
+  
+              </div>
+
+            </form>
+          </div>
+
+          <div class="form-box Activities-form-box">
+
+            <div class="top">
+              <p class="form-title">Activities</p>
+
+              <button style="cursor: pointer;" id="activity-edit-button" class="edit-info">
+                <img src="../images/edit.png" alt="">
+                Edit
+              </button>
+            </div>
+            
+  
+            <form action="" class="editable-form Activities-form ">
+              <div id="activities" class="activities">
+              </div>
+
+              <div class="form-group" style="position: relative;">
+
+                <form  action="">
+
+                  
+                    <label for="">Add Activity</label>
+                    <select name="add" id="activity-select" class="activity_select">
+                      <option value="Kickboxing">Kickboxing</option>
+                    </select>
+                 
+
+
+                  
+                  <button type="submit" id="add-sport" class="add-sport" >Add</button>
+               
+                </form>
+
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+
+        
+      </div>
+    </div>
   </div>
   <script src="../JS/anim.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="../JS/account.js"></script>
 </body>
 </html>

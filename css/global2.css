@@ -4,9 +4,10 @@
   --font2: "Roboto Mono", monospace;
   --accent:  rgb(128, 194, 227);
   --accent2:  rgb(246, 251, 255);
-  --main:rgb(5, 6, 6);
+  --main:rgb(4, 4, 4);
   --secondary: rgb(29, 36, 41);
   --glass_back: rgba(65, 69, 74, 0.444);
+  --black-glass:rgba(57, 60, 66, 0.272);
   --glass_filter:blur(8px);
   --glass_shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +41,8 @@ html{
 }
 
 body{
-  background-color: var(--main);
+  background-color:black;
+  background-size: 20px;
  }
 
 .page-container{
@@ -50,7 +52,7 @@ body{
 
 .container{
   max-width: 2000px;
-  padding: 0 3rem;
+  padding: 0 2rem;
   margin: auto;
 }
 
@@ -68,13 +70,16 @@ body{
   gap: 2rem;
 position: fixed;
   top: 7rem;
-  width: 300px;
+  border-radius: 20px;
   z-index: 8;
+  box-sizing: border-box;
+  padding: 2rem 2rem 2rem 2rem;
+  background-color: var(--black-glass);
 }
 
 .nav-btn{
   padding: 5px;
-  width: 200px;
+  width: 180px;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -90,10 +95,9 @@ position: fixed;
 .nav-btns p{
   color: white;
   font-size: 18px;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-color: var(--accent);
-  text-decoration-thickness: 2px;
+  padding-bottom: 5px;
+  width: 70%;
+  border-bottom: 2px var(--accent) solid;
 }
 
 
@@ -112,7 +116,7 @@ position: fixed;
   background-color: var(--glass_back);
   border-radius: 20px;
   padding: 10px;
-  width: 200px;
+  width: 190px;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -136,12 +140,20 @@ position: fixed;
   height: 6rem;
   color: white;
   align-items: center;
- width: 100%;
   justify-content: space-between;
   position: sticky;
   top: 0;
-  background-color: var(--main);
+  left: 0;
+  right:0;
+  box-sizing: border-box;
+  padding: 0 3rem;
+  background-color:var(--glass_back);
+  backdrop-filter: var(--glass_filter);
   z-index: 8;
+  width: 100%;
+  border-radius: 0px 0px 20px 20px;
+  max-width: 2000px;
+  margin: auto;
 }
 
 .user-box{
@@ -238,22 +250,23 @@ position: fixed;
 
 .dropdown-menu{
   position: absolute;
-  background-color: var(--glass_back);
-  right: -1rem;
+  background-color:rgba(19, 19, 19, 0.881);
+  right: 0rem;
   bottom: -7rem;
   padding: 1rem;
   height: min-content;
   border-radius: 20px;
-  backdrop-filter: var(--glass_filter);
   pointer-events: none;
-  transform: translateY(-1rem);
   opacity: 0;
+  transform: translateY(-1rem);
   transition: all .3s ease-in-out;
 }
 
 .top-nav-btn:hover{
-  background-color: var(--secondary);
+  background-color: var(--glass_back);
 }
+
+
 
 .top-nav-btn img{
   height: 20px;
@@ -262,11 +275,17 @@ position: fixed;
   border-radius: 10px;
 }
 
+.top-nav-btn:hover > img{
+  background-color: var(--accent);
+}
+
 .dropdown-menu.show{
   opacity: 1;
   pointer-events: all;
+  display: block;
   visibility: visible;
   transform: translateY(1rem);
+  backdrop-filter: blur(10px);
 }
 
 .drop-button.show{
@@ -278,7 +297,7 @@ position: fixed;
   display: grid;
   grid-template-columns: 300px 1fr;
   z-index: 6;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   color: white;
 }
 
